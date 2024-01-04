@@ -1,0 +1,366 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="org.tensorflow.lite.examples.objectdetection"
+5    android:versionCode="1"
+6    android:versionName="1.0.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="32" />
+10-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.WRITE_CONTACTS" /> <!-- Enable instant app support -->
+12-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:8:5-73
+12-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:8:22-70
+13    <dist:module dist:instant="true" /> <!-- Declare features -->
+13-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:9:5-40
+13-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:9:18-37
+14    <uses-feature android:name="android.hardware.camera" /> <!-- Declare permissions -->
+14-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:10:5-60
+14-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:10:19-57
+15    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+15-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:11:5-76
+15-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:11:22-73
+16    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+16-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:12:5-76
+16-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:12:22-73
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:13:5-65
+17-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:13:22-62
+18    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+18-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:14:5-85
+18-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:14:22-82
+19    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+19-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:15:5-81
+19-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:15:22-78
+20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+20-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:16:5-79
+20-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:16:22-76
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:17:5-67
+21-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:17:22-64
+22    <uses-permission android:name="android.permission.READ_CONTACTS" />
+22-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:18:5-72
+22-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:18:22-69
+23    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+23-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:19:5-71
+23-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:19:22-68
+24    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+24-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:20:5-80
+24-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:20:22-77
+25    <uses-permission android:name="android.permission.VIBRATE" />
+25-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:21:5-66
+25-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:21:22-63
+26    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+26-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:22:5-79
+26-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:22:22-76
+27    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Declare permissions -->
+27-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:23:5-81
+27-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:23:22-78
+28    <uses-permission android:name="android.permission.CAMERA" />
+28-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:13:5-65
+28-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:13:22-62
+29    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+29-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:25:5-75
+29-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:25:22-72
+30    <uses-permission android:name="android.permission.SEND_SMS" />
+30-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:26:5-67
+30-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:26:22-64
+31    <uses-permission android:name="android.permission.CALL_PHONE" />
+31-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:27:5-69
+31-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:27:22-66
+32    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+32-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:28:5-76
+32-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:28:22-74
+33
+34    <queries>
+34-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:30:5-32:15
+35        <package android:name="com.google.android.googlequicksearchbox" />
+35-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:31:9-75
+35-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:31:18-72
+36    </queries>
+37
+38    <application
+38-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:34:5-114:19
+39        android:allowBackup="true"
+39-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:35:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.8.0] C:\Users\kalla\.gradle\caches\transforms-3\c23a032be893b88378a89fd52f55942c\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+41        android:debuggable="true"
+42        android:icon="@drawable/ic_baseline_camera_24"
+42-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:36:9-55
+43        android:label="Netrikan"
+43-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:37:9-33
+44        android:roundIcon="@drawable/netrikan"
+44-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:38:9-47
+45        android:taskAffinity=""
+45-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:39:9-32
+46        android:testOnly="true" >
+47        <activity
+47-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:42:9-47:63
+48            android:name="org.tensorflow.lite.examples.objectdetection.MainActivity11"
+48-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:43:13-43
+49            android:configChanges="orientation|keyboardHidden|screenSize"
+49-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:44:13-74
+50            android:exported="false"
+50-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:45:13-37
+51            android:label="@string/title_activity_main11"
+51-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:46:13-58
+52            android:theme="@style/Theme.Android.Fullscreen" />
+52-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:47:13-60
+53        <activity
+53-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:48:9-53:63
+54            android:name="org.tensorflow.lite.examples.objectdetection.MainActivity10"
+54-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:49:13-43
+55            android:configChanges="orientation|keyboardHidden|screenSize"
+55-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:50:13-74
+56            android:exported="false"
+56-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:51:13-37
+57            android:label="@string/title_activity_main10"
+57-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:52:13-58
+58            android:theme="@style/Theme.Android.Fullscreen" />
+58-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:53:13-60
+59        <activity
+59-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:54:9-59:63
+60            android:name="org.tensorflow.lite.examples.objectdetection.MainActivity9"
+60-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:55:13-42
+61            android:configChanges="orientation|keyboardHidden|screenSize"
+61-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:56:13-74
+62            android:exported="false"
+62-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:57:13-37
+63            android:label="@string/title_activity_main9"
+63-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:58:13-57
+64            android:theme="@style/Theme.Android.Fullscreen" />
+64-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:59:13-60
+65        <activity
+65-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:60:9-65:63
+66            android:name="org.tensorflow.lite.examples.objectdetection.MainActivity8"
+66-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:61:13-42
+67            android:configChanges="orientation|keyboardHidden|screenSize"
+67-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:62:13-74
+68            android:exported="false"
+68-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:63:13-37
+69            android:label="@string/title_activity_main8"
+69-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:64:13-57
+70            android:theme="@style/Theme.Android.Fullscreen" />
+70-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:65:13-60
+71        <activity
+71-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:66:9-71:63
+72            android:name="org.tensorflow.lite.examples.objectdetection.MainActivity7"
+72-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:67:13-42
+73            android:configChanges="orientation|keyboardHidden|screenSize"
+73-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:68:13-74
+74            android:exported="false"
+74-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:69:13-37
+75            android:label="@string/title_activity_main7"
+75-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:70:13-57
+76            android:theme="@style/Theme.Android.Fullscreen" />
+76-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:71:13-60
+77        <activity
+77-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:72:9-77:63
+78            android:name="org.tensorflow.lite.examples.objectdetection.MainActivity"
+78-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:73:13-41
+79            android:configChanges="orientation|keyboardHidden|screenSize"
+79-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:74:13-74
+80            android:exported="false"
+80-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:75:13-37
+81            android:label="@string/title_activity_main"
+81-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:76:13-56
+82            android:theme="@style/Theme.Android.Fullscreen" />
+82-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:77:13-60
+83        <activity
+83-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:78:9-83:63
+84            android:name="org.tensorflow.lite.examples.objectdetection.MainActivity5"
+84-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:79:13-42
+85            android:configChanges="orientation|keyboardHidden|screenSize"
+85-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:80:13-74
+86            android:exported="false"
+86-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:81:13-37
+87            android:label="@string/title_activity_main5"
+87-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:82:13-57
+88            android:theme="@style/Theme.Android.Fullscreen" />
+88-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:83:13-60
+89        <activity
+89-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:84:9-89:63
+90            android:name="org.tensorflow.lite.examples.objectdetection.MainActivity3"
+90-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:85:13-42
+91            android:configChanges="orientation|keyboardHidden|screenSize"
+91-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:86:13-74
+92            android:exported="false"
+92-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:87:13-37
+93            android:label="@string/title_activity_main3"
+93-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:88:13-57
+94            android:theme="@style/Theme.Android.Fullscreen" />
+94-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:89:13-60
+95        <activity
+95-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:90:9-112:20
+96            android:name="org.tensorflow.lite.examples.objectdetection.MainActivity2"
+96-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:91:13-42
+97            android:clearTaskOnLaunch="true"
+97-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:92:13-45
+98            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"
+98-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:93:13-91
+99            android:exported="true"
+99-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:94:13-36
+100            android:icon="@drawable/cam"
+100-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:95:13-41
+101            android:resizeableActivity="true"
+101-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:96:13-46
+102            android:rotationAnimation="seamless"
+102-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:97:13-49
+103            android:theme="@style/AppTheme" >
+103-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:98:13-44
+104
+105            <!-- Main app intent filter -->
+106            <intent-filter>
+106-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:102:13-106:29
+107                <action android:name="android.intent.action.MAIN" />
+107-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:103:17-69
+107-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:103:25-66
+108
+109                <category android:name="android.intent.category.LAUNCHER" />
+109-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:105:17-77
+109-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:105:27-74
+110            </intent-filter>
+111
+112            <!-- Declare notch support -->
+113            <meta-data
+113-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:109:13-111:40
+114                android:name="android.notch_support"
+114-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:110:17-53
+115                android:value="true" />
+115-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:111:17-37
+116        </activity>
+117
+118        <service android:name="org.tensorflow.lite.examples.objectdetection.ForegroundService" />
+118-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:113:9-53
+118-->C:\Users\kalla\OneDrive\Desktop\NETRIKAN - Copy\android\android\app\src\main\AndroidManifest.xml:113:18-51
+119
+120        <uses-library
+120-->[androidx.window:window:1.0.0-alpha09] C:\Users\kalla\.gradle\caches\transforms-3\fd89891908524ffdf904b2e997e8aae1\transformed\jetified-window-1.0.0-alpha09\AndroidManifest.xml:25:9-27:40
+121            android:name="androidx.window.extensions"
+121-->[androidx.window:window:1.0.0-alpha09] C:\Users\kalla\.gradle\caches\transforms-3\fd89891908524ffdf904b2e997e8aae1\transformed\jetified-window-1.0.0-alpha09\AndroidManifest.xml:26:13-54
+122            android:required="false" />
+122-->[androidx.window:window:1.0.0-alpha09] C:\Users\kalla\.gradle\caches\transforms-3\fd89891908524ffdf904b2e997e8aae1\transformed\jetified-window-1.0.0-alpha09\AndroidManifest.xml:27:13-37
+123        <uses-library
+123-->[androidx.window:window:1.0.0-alpha09] C:\Users\kalla\.gradle\caches\transforms-3\fd89891908524ffdf904b2e997e8aae1\transformed\jetified-window-1.0.0-alpha09\AndroidManifest.xml:28:9-30:40
+124            android:name="androidx.window.sidecar"
+124-->[androidx.window:window:1.0.0-alpha09] C:\Users\kalla\.gradle\caches\transforms-3\fd89891908524ffdf904b2e997e8aae1\transformed\jetified-window-1.0.0-alpha09\AndroidManifest.xml:29:13-51
+125            android:required="false" />
+125-->[androidx.window:window:1.0.0-alpha09] C:\Users\kalla\.gradle\caches\transforms-3\fd89891908524ffdf904b2e997e8aae1\transformed\jetified-window-1.0.0-alpha09\AndroidManifest.xml:30:13-37
+126
+127        <service
+127-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\kalla\.gradle\caches\transforms-3\dc8a260ccda885b3d7c951639e373f41\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:9:9-15:19
+128            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+128-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\kalla\.gradle\caches\transforms-3\dc8a260ccda885b3d7c951639e373f41\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:10:13-91
+129            android:directBootAware="true"
+129-->[com.google.mlkit:common:18.5.0] C:\Users\kalla\.gradle\caches\transforms-3\581a0525022b62ecb328219a48b15739\transformed\jetified-common-18.5.0\AndroidManifest.xml:17:13-43
+130            android:exported="false" >
+130-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\kalla\.gradle\caches\transforms-3\dc8a260ccda885b3d7c951639e373f41\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:11:13-37
+131            <meta-data
+131-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\kalla\.gradle\caches\transforms-3\dc8a260ccda885b3d7c951639e373f41\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:12:13-14:85
+132                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+132-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\kalla\.gradle\caches\transforms-3\dc8a260ccda885b3d7c951639e373f41\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:13:17-114
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\kalla\.gradle\caches\transforms-3\dc8a260ccda885b3d7c951639e373f41\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:14:17-82
+134            <meta-data
+134-->[com.google.mlkit:vision-common:17.2.1] C:\Users\kalla\.gradle\caches\transforms-3\6c111d59c62749e677ff6a738c8d352d\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:12:13-14:85
+135                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+135-->[com.google.mlkit:vision-common:17.2.1] C:\Users\kalla\.gradle\caches\transforms-3\6c111d59c62749e677ff6a738c8d352d\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:13:17-124
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.mlkit:vision-common:17.2.1] C:\Users\kalla\.gradle\caches\transforms-3\6c111d59c62749e677ff6a738c8d352d\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:14:17-82
+137            <meta-data
+137-->[com.google.mlkit:common:18.5.0] C:\Users\kalla\.gradle\caches\transforms-3\581a0525022b62ecb328219a48b15739\transformed\jetified-common-18.5.0\AndroidManifest.xml:20:13-22:85
+138                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+138-->[com.google.mlkit:common:18.5.0] C:\Users\kalla\.gradle\caches\transforms-3\581a0525022b62ecb328219a48b15739\transformed\jetified-common-18.5.0\AndroidManifest.xml:21:17-120
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.mlkit:common:18.5.0] C:\Users\kalla\.gradle\caches\transforms-3\581a0525022b62ecb328219a48b15739\transformed\jetified-common-18.5.0\AndroidManifest.xml:22:17-82
+140        </service>
+141        <service
+141-->[androidx.camera:camera-camera2:1.1.0-beta03] C:\Users\kalla\.gradle\caches\transforms-3\9886d106f8a9677d73f154939dd178e4\transformed\jetified-camera-camera2-1.1.0-beta03\AndroidManifest.xml:26:9-35:19
+142            android:name="androidx.camera.core.impl.MetadataHolderService"
+142-->[androidx.camera:camera-camera2:1.1.0-beta03] C:\Users\kalla\.gradle\caches\transforms-3\9886d106f8a9677d73f154939dd178e4\transformed\jetified-camera-camera2-1.1.0-beta03\AndroidManifest.xml:27:13-75
+143            android:enabled="false"
+143-->[androidx.camera:camera-camera2:1.1.0-beta03] C:\Users\kalla\.gradle\caches\transforms-3\9886d106f8a9677d73f154939dd178e4\transformed\jetified-camera-camera2-1.1.0-beta03\AndroidManifest.xml:28:13-36
+144            android:exported="false" >
+144-->[androidx.camera:camera-camera2:1.1.0-beta03] C:\Users\kalla\.gradle\caches\transforms-3\9886d106f8a9677d73f154939dd178e4\transformed\jetified-camera-camera2-1.1.0-beta03\AndroidManifest.xml:29:13-37
+145            <meta-data
+145-->[androidx.camera:camera-camera2:1.1.0-beta03] C:\Users\kalla\.gradle\caches\transforms-3\9886d106f8a9677d73f154939dd178e4\transformed\jetified-camera-camera2-1.1.0-beta03\AndroidManifest.xml:32:13-34:89
+146                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+146-->[androidx.camera:camera-camera2:1.1.0-beta03] C:\Users\kalla\.gradle\caches\transforms-3\9886d106f8a9677d73f154939dd178e4\transformed\jetified-camera-camera2-1.1.0-beta03\AndroidManifest.xml:33:17-103
+147                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+147-->[androidx.camera:camera-camera2:1.1.0-beta03] C:\Users\kalla\.gradle\caches\transforms-3\9886d106f8a9677d73f154939dd178e4\transformed\jetified-camera-camera2-1.1.0-beta03\AndroidManifest.xml:34:17-86
+148        </service>
+149
+150        <provider
+150-->[com.google.mlkit:common:18.5.0] C:\Users\kalla\.gradle\caches\transforms-3\581a0525022b62ecb328219a48b15739\transformed\jetified-common-18.5.0\AndroidManifest.xml:9:9-13:38
+151            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+151-->[com.google.mlkit:common:18.5.0] C:\Users\kalla\.gradle\caches\transforms-3\581a0525022b62ecb328219a48b15739\transformed\jetified-common-18.5.0\AndroidManifest.xml:10:13-78
+152            android:authorities="org.tensorflow.lite.examples.objectdetection.mlkitinitprovider"
+152-->[com.google.mlkit:common:18.5.0] C:\Users\kalla\.gradle\caches\transforms-3\581a0525022b62ecb328219a48b15739\transformed\jetified-common-18.5.0\AndroidManifest.xml:11:13-69
+153            android:exported="false"
+153-->[com.google.mlkit:common:18.5.0] C:\Users\kalla\.gradle\caches\transforms-3\581a0525022b62ecb328219a48b15739\transformed\jetified-common-18.5.0\AndroidManifest.xml:12:13-37
+154            android:initOrder="99" />
+154-->[com.google.mlkit:common:18.5.0] C:\Users\kalla\.gradle\caches\transforms-3\581a0525022b62ecb328219a48b15739\transformed\jetified-common-18.5.0\AndroidManifest.xml:13:13-35
+155
+156        <activity
+156-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\kalla\.gradle\caches\transforms-3\07eee46e48144276d4ca2501b8feae4a\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+157            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+157-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\kalla\.gradle\caches\transforms-3\07eee46e48144276d4ca2501b8feae4a\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+158            android:exported="false"
+158-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\kalla\.gradle\caches\transforms-3\07eee46e48144276d4ca2501b8feae4a\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+159            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+159-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\kalla\.gradle\caches\transforms-3\07eee46e48144276d4ca2501b8feae4a\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+160
+161        <meta-data
+161-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\kalla\.gradle\caches\transforms-3\5ae08333dc83c122bf58748254955484\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+162            android:name="com.google.android.gms.version"
+162-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\kalla\.gradle\caches\transforms-3\5ae08333dc83c122bf58748254955484\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+163            android:value="@integer/google_play_services_version" />
+163-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\kalla\.gradle\caches\transforms-3\5ae08333dc83c122bf58748254955484\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+164
+165        <service
+165-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\kalla\.gradle\caches\transforms-3\7f0f3e97a74e4f4f6147c7fd1f3ca9c0\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+166            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+166-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\kalla\.gradle\caches\transforms-3\7f0f3e97a74e4f4f6147c7fd1f3ca9c0\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+167            android:exported="false" >
+167-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\kalla\.gradle\caches\transforms-3\7f0f3e97a74e4f4f6147c7fd1f3ca9c0\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+168            <meta-data
+168-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\kalla\.gradle\caches\transforms-3\7f0f3e97a74e4f4f6147c7fd1f3ca9c0\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+169                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+169-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\kalla\.gradle\caches\transforms-3\7f0f3e97a74e4f4f6147c7fd1f3ca9c0\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+170                android:value="cct" />
+170-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\kalla\.gradle\caches\transforms-3\7f0f3e97a74e4f4f6147c7fd1f3ca9c0\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+171        </service>
+172        <service
+172-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\kalla\.gradle\caches\transforms-3\224c02279b0485ceb3eac82c8ba90eb3\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+173            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+173-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\kalla\.gradle\caches\transforms-3\224c02279b0485ceb3eac82c8ba90eb3\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+174            android:exported="false"
+174-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\kalla\.gradle\caches\transforms-3\224c02279b0485ceb3eac82c8ba90eb3\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+175            android:permission="android.permission.BIND_JOB_SERVICE" >
+175-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\kalla\.gradle\caches\transforms-3\224c02279b0485ceb3eac82c8ba90eb3\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+176        </service>
+177
+178        <receiver
+178-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\kalla\.gradle\caches\transforms-3\224c02279b0485ceb3eac82c8ba90eb3\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+179            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+179-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\kalla\.gradle\caches\transforms-3\224c02279b0485ceb3eac82c8ba90eb3\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+180            android:exported="false" />
+180-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\kalla\.gradle\caches\transforms-3\224c02279b0485ceb3eac82c8ba90eb3\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+181
+182        <provider
+182-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\kalla\.gradle\caches\transforms-3\d3b9f0ec91abda46eb69824da218d191\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+183            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+183-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\kalla\.gradle\caches\transforms-3\d3b9f0ec91abda46eb69824da218d191\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+184            android:authorities="org.tensorflow.lite.examples.objectdetection.lifecycle-process"
+184-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\kalla\.gradle\caches\transforms-3\d3b9f0ec91abda46eb69824da218d191\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+185            android:exported="false"
+185-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\kalla\.gradle\caches\transforms-3\d3b9f0ec91abda46eb69824da218d191\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+186            android:multiprocess="true" />
+186-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\kalla\.gradle\caches\transforms-3\d3b9f0ec91abda46eb69824da218d191\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+187    </application>
+188
+189</manifest>
