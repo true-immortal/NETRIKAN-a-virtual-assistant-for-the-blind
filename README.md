@@ -22,4 +22,4 @@ Features of Application:
 
 ->most of the  features work offline.
 
-I apologise in advance as there are many changes yet to be made and exceptions to be handled in the Application.
+Exceptions need to handled.
