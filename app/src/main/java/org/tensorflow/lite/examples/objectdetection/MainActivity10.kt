@@ -1,5 +1,5 @@
 package org.tensorflow.lite.examples.objectdetection
-
+// USED TO MAKE PHONE CALLS.
 
 import android.content.Intent
 import android.content.pm.PackageManager
